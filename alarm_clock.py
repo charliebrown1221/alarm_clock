@@ -8,19 +8,16 @@ class Alarmclock:
 
     def set_time(self):  
         current_time = input('Current time is 1000 do yo want to change it? Enter y/n:  ')  
-        self.time_now= current_time
+      
         if current_time == 'y':
-            current_time = input ('What time is it? ')
+            self.time_now = input ('What time is it? ')
         else:
-            current_time = 1000    
+            self.time_now = 1000    
 
     def set_alarm_time(self):
         wakeup_time = input('What time do you want to wake up? ')
         self.alarm_time = wakeup_time   
           
-
-
-
 
     def alarm_set(self):
         if self.alarm_on == False:
